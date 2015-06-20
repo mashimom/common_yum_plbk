@@ -2,7 +2,6 @@
 galaxy_info:
   author: Marco Shimomoto
   description: Role to install few ansible required packages and clean yum cache
-  company: IBM
   license: MIT
   min_ansible_version: 1.2
   platforms:
