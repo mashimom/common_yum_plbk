@@ -1,0 +1,15 @@
+---
+# tasks file for common_yum
+  - name: Install packages
+    yum: name={{ item }} state=present
+    when: ansible_pkg_mgr == 'rpm'
+    sudo: true
+    with_items: common_yum_packages
+    notify: clean yum cache
+
+  - name: Install groups 
+    yum: name="@{{ item }}" state=present
+    when: ansible_pkg_mgr == 'rpm'
+    sudo: true
+    with_items: common_yum_groups
+    notify: clean yum cache

@@ -1,0 +1,5 @@
+---
+# defaults file for common_yum
+common_yum:
+  packages: [git curl]
+  groups: []

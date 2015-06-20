@@ -1,0 +1,6 @@
+---
+# handlers file for common_yum
+  - name: clean yum cache
+    when: ansible_pkg_mgr == 'rpm'
+    command: yum -y clean all
+    sudo: true

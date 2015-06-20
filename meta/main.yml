@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: Marco Shimomoto
+  description: Role to install few ansible required packages and clean yum cache
+  company: IBM
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+  - name: EL
+    versions:
+    - 6
+    - 7
+  - name: Fedora
+    versions:
+    - 19
+    - 20
+    - 21
+    - 22
+  categories:
+  - system
+dependencies: []
