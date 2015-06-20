@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Marco Shimomoto
-  description: Role to install few ansible required packages and clean yum cache
+  description: Ansible simple yum role that supports installation of few packages and/or groups the should be required everywhere, also a yum cache clean handler.
   license: MIT
   min_ansible_version: 1.2
   platforms:
